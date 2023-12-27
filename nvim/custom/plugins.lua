@@ -1,5 +1,5 @@
 local plugins = {
-  {
+    {
     "nvimtools/none-ls.nvim",
     event = "VeryLazy",
     opts = function()
@@ -21,6 +21,10 @@ local plugins = {
         "tailwindcss-language-server",
         "eslint-lsp",
         "prettierd",
+        "pyright",
+        "mypy",
+        "ruff",
+        "black",
       }
     }
   },
