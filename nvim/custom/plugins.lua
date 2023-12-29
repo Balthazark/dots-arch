@@ -1,5 +1,12 @@
 local plugins = {
-    {
+  {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function ()
+     vim.g.rustfmt_autosave = 1
+    end
+  },
+  {
     "nvimtools/none-ls.nvim",
     event = "VeryLazy",
     opts = function()
@@ -25,6 +32,7 @@ local plugins = {
         "mypy",
         "ruff",
         "black",
+        "rust-analyzer",
       }
     }
   },
